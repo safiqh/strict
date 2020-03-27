@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+nav{
+    background-color: #f6f9f9;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    transition: 0.5s !important;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #2d3950;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color:#15a4fa;
+}
+
+.topbar{
+    padding: 5px 0;
+}
+
+header{
+    background-image: url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+
+header .row{
+    min-height:550px;
+}
+
+header h1{
+    font-size: 110px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+header p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+header span{
+    width: 100%;
+    height: 2px;
+    background: #15a4fa;
+    display: block;
+    margin-bottom: 15px;
+}
+header button{
+    border: 1px solid #15a4fa !important;
+    border-radius: 5px !important;
+    font-size: 15px !important;
+    background-color: transparent;
+    color: #fff !important;
+    padding: 8px 30px !important;
+    
+}
+header button:hover{
+    background-color:#15a4fa !important;
+}
+header a{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    color: #fff;
+    font-size: 20px;    
+    display: block;
+
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+}
+@keyframes move {
+    0%{
+        bottom: 30px;
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+
+header a:hover{
+    color: #fff;
+}
+
+
+/************* about- section************/
+.about-section{
+    background-color: #f6f9f9;
+}
+.about-section h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.about-section p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+/************* service - section ************/
+.service-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.service{
+    width: 300px;
+    margin: auto;
+}
+.service span{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #48baff 50%, #5fc3ff 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #48baff 50%,#5fc3ff 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #48baff 50%,#5fc3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+    font-size: 30px;
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: auto;
+    line-height: 90px;
+    color: #fff;
+    text-shadow: 0 2px 5px #656565b5;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+.service h2{
+    font-size: 22px;
+    color: #2d3950;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.service p{
+    font-size: 15px;
+    color: #344256;
+}
+
+
+/********* showcase-section **********/
+
+.showcase-section{
+    background: #f6f9f9;
+    padding-bottom: 60px;
+}
+.showcase-section h1{
+    padding-top: 70px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #2d3950;
+}
+.showcase-section p{
+    font-size: 15px;
+    padding-bottom: 70px;
+    padding-top: 15px;
+}
+.showcase-section p a{
+    color: #2d3950;
+    text-decoration: none;
+}
+
+
+.showcase{
+    position: relative;
+    margin-bottom: 30px;
+}
+.showcase::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #15a4fa;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.4s;
+    transform: scale(0.5);
+    opacity: 0;
+}
+.showcase:hover::before{
+    transform: scale(1);
+    opacity: 0.6;
+}
+.showcase img{}
+.showcase ul{
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.showcase:hover ul{
+    opacity: 1;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+.showcase ul li{
+    padding: 5px;
+}
+.showcase ul li a{
+    color: #fff;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.showcase ul li a:hover{
+    opacity: 0.8;
+}
+
+/****** contact-section ******/
+
+.contact-section{
+    position: relative;
+    background-image: url(../images/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+}
+.contact-section::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #2c384c;
+    position: absolute;
+    opacity: 0.5;
+}
+.contact-section h1{
+    position: relative;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+.contact-section p{
+    position: relative;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8a8c8f;
+    margin-bottom: 40px;
+}
+.form-group{
+    position: relative;
+    opacity: 0.5;
+}
+
+ul {
+}
+ul li{}
+ul li input{}
+label {
+    padding-left: 7px;
+}
+.contact-section .btn{
+    border: 1px solid #15a4fa !important;
+    border-radius: 5px !important;
+    font-size: 15px !important;
+    background: transparent;
+    color: #fff !important;
+    padding: 6px 40px !important;
+    transition: 0.5s !important;
+}
+
+.contact-section .btn:hover{
+    background-color:#15a4fa !important;
+}
+/****** Footer-Section ******/
+footer{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+footer p{}
+footer ul{
+    list-style-type: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0 4px;
+}
+
+footer ul li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #15a4fa;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+footer ul li a:hover{
+    background-color: #097abd;
+    color: #fff;
+    text-decoration: none;
+}
